@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de privacidad — Carabeo 26</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { sea: { DEFAULT: '#0e7490', dark: '#155e75' } },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans:  ['Inter', 'system-ui', 'sans-serif']
+        }
+      }}
+    }
+  </script>
+  <style> html { scroll-behavior: smooth; } [data-lang-btn].active { color: #155e75; font-weight: 700; } </style>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="font-sans bg-white text-slate-700 antialiased">
+
+  <header class="border-b border-slate-100">
+    <nav class="max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-serif text-xl font-bold tracking-wide text-sea-dark">Carabeo 26</a>
+      <div class="flex items-center gap-1 text-sm text-slate-400 border border-slate-200 rounded-lg px-1 py-0.5">
+        <button type="button" data-lang-btn="es" class="px-2 py-0.5 rounded active">ES</button>
+        <span class="text-slate-200">/</span>
+        <button type="button" data-lang-btn="en" class="px-2 py-0.5 rounded">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12 space-y-8">
+    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900" data-i18n="privacy.title">Política de privacidad</h1>
+
+    <!-- ⚠️ DATO PENDIENTE: identidad del responsable del tratamiento (nombre/NIF). Lo aporta el titular. -->
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.responsibleTitle">Responsable del tratamiento</h2>
+      <p class="text-slate-600" data-i18n="privacy.responsibleBody">Responsable: [pendiente de completar por el titular]. Contacto: carabeo26nerja@gmail.com.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.purposeTitle">Finalidad</h2>
+      <p class="text-slate-600" data-i18n="privacy.purposeBody">Tratamos los datos que nos facilitas en el formulario (nombre, email, teléfono, fechas de estancia, número de huéspedes y, opcionalmente, tu mensaje) con la única finalidad de gestionar tu solicitud de reserva directa.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.legalTitle">Base legal</h2>
+      <p class="text-slate-600" data-i18n="privacy.legalBody">El tratamiento se basa en tu consentimiento, otorgado al enviar el formulario de solicitud.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.recipientsTitle">Destinatarios</h2>
+      <p class="text-slate-600" data-i18n="privacy.recipientsBody">Tus datos no se ceden a terceros. Se almacenan en los servicios de Google (Sheets/Gmail) utilizados para recibir y gestionar la solicitud.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.retentionTitle">Conservación</h2>
+      <p class="text-slate-600" data-i18n="privacy.retentionBody">Conservamos los datos durante el tiempo necesario para gestionar tu solicitud y, en su caso, la estancia; después se eliminan salvo obligación legal de conservarlos.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="privacy.rightsTitle">Tus derechos</h2>
+      <p class="text-slate-600" data-i18n="privacy.rightsBody">Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a carabeo26nerja@gmail.com. También puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+    </section>
+
+    <p class="pt-4"><a href="index.html" class="text-sea hover:text-sea-dark underline" data-i18n="privacy.back">← Volver al inicio</a></p>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso legal — Carabeo 26</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { sea: { DEFAULT: '#0e7490', dark: '#155e75' } },
+        fontFamily: {
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans:  ['Inter', 'system-ui', 'sans-serif']
+        }
+      }}
+    }
+  </script>
+  <style> html { scroll-behavior: smooth; } [data-lang-btn].active { color: #155e75; font-weight: 700; } </style>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="font-sans bg-white text-slate-700 antialiased">
+
+  <header class="border-b border-slate-100">
+    <nav class="max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-serif text-xl font-bold tracking-wide text-sea-dark">Carabeo 26</a>
+      <div class="flex items-center gap-1 text-sm text-slate-400 border border-slate-200 rounded-lg px-1 py-0.5">
+        <button type="button" data-lang-btn="es" class="px-2 py-0.5 rounded active">ES</button>
+        <span class="text-slate-200">/</span>
+        <button type="button" data-lang-btn="en" class="px-2 py-0.5 rounded">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12 space-y-8">
+    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900" data-i18n="legal.title">Aviso legal</h1>
+
+    <!-- ⚠️ DATO PENDIENTE: identidad del titular (nombre/razón social + NIF/DNI).
+         Obligatorio en el aviso legal (LSSI). No se inventa — lo aporta el propietario. -->
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="legal.holderTitle">Titular</h2>
+      <p class="text-slate-600" data-i18n="legal.holderBody">Responsable: [pendiente de completar por el titular] · Email de contacto: carabeo26nerja@gmail.com · Nerja (Málaga), España.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="legal.registryTitle">Datos registrales</h2>
+      <p class="text-slate-600" data-i18n="legal.registryBody">Vivienda con fines turísticos inscrita en el Registro de Turismo de Andalucía con número VFT/MA/53903. Registro nacional: ESFCTU0000290130000579000000000000000000VFT/MA/539038.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="legal.useTitle">Condiciones de uso</h2>
+      <p class="text-slate-600" data-i18n="legal.useBody">Este sitio web tiene como finalidad ofrecer información sobre el alojamiento Carabeo 26 y gestionar solicitudes de reserva directa. El uso del sitio implica la aceptación de estas condiciones.</p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold text-slate-800" data-i18n="legal.lawTitle">Legislación aplicable</h2>
+      <p class="text-slate-600" data-i18n="legal.lawBody">Las presentes condiciones se rigen por la legislación española.</p>
+    </section>
+
+    <p class="pt-4"><a href="index.html" class="text-sea hover:text-sea-dark underline" data-i18n="legal.back">← Volver al inicio</a></p>
+  </main>
+
+</body>
+</html>
